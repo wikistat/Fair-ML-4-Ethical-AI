@@ -2,7 +2,8 @@
 <a href="http://www.univ-tlse3.fr/" ><img src="http://www.univ-tlse3.fr/medias/photo/ut3pres_logoq_1372757033342.jpg?ID_FICHE=49702" style="float:right; max-width: 250px; display: inline"  alt="insa"/></a>
 <a href="http://wikistat.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/wikistat.jpg" style="float:right; max-width: 250px; display: inline"  alt="Wikistat"/></a>
 
-# Apprentissage Statistique Loyal pour IA Ethique: outils pédagogique
+# Apprentissage Statistique Loyal pour IA Ethique
+## Outils pédagogique
 
 ## *Fair Machine Learning for Ethical AI: educational resources*
 
@@ -63,10 +64,10 @@ La première difficulté réside dans la façon de définir une dicrimination, n
 Illustration de [del Barrio et al. (2018)](https://arxiv.org/pdf/1806.03195).
 
 ## 5 Droit à l'explication
-Illustration de [Bachoc et al. (2018)]()... En chantier.
+Illustration de [Bachoc et al. (2019)]()... En chantier.
 
 ## Références
-- Bachoc, F, Gamboa, F., Loubes, J-M. and Risser, L (2018). Sensitivity  Analysis for Explainable & Intepretable Machine Learning Algorithms. work in progress.
+- Bachoc, F, Gamboa, F., Loubes, J-M. and Risser, L (2019). Sensitivity  Analysis for Explainable & Intepretable Machine Learning Algorithms, work in progress.
 - Besse P. del Barrio E., Gordaliza P., Loubes J.-M. (2018-a). Confidence Intervals for testing Disparate Impact in Fair Learning, soumis, [arXiv preprint](https://arxiv.org/abs/1807.06362).
 - Besse P., Castets-Renard C., Garivier A., Loubes J.-M. (2018-b). L'IA du Quotidien peut elle être Éthique?  Loyauté des Algorithmes d'Apprentissage Automatique, *Statistique et Société*, à paraître, [HAL preprint](https://hal.archives-ouvertes.fr/hal-01886699v1).
 - del Barrio E., Gamboa F., Gordaliza P., Loubes J.-M. (2018). Obtaining fairness using optimal transport theory, soumis, [arXiv preprint](https://arxiv.org/pdf/1806.03195).
