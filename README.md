@@ -37,7 +37,7 @@ Ce dépôt regroupe des outils poursuivant plusieurs objectifs mais principaleme
 
 *Il s'agit finalement d'illustrer en pratique et de façon pédagogique les réflexions de [Besse et al. (2018-b)](https://hal.archives-ouvertes.fr/hal-01886699v1) sur ces questions*. 
 
-### 1.3 Cadre technique
+### 1.3 Environnement technique
 Les outils sont déployés sous la forme de tutoriels: calepins ou *jupyter notenooks*. Des compléments d'informations sur les outils et algorithmes utilisés sont à rechercher dans les autres tutoriels du dépôt [`github/wikistat`](https://github.com/wikistat). 
 
 Le choix a été fait de développer les calepins avec le [langage R](https://github.com/wikistat/Intro-R) plus simple et plus intuitif que [Python](https://github.com/wikistat/Intro-Python). Les différentes librairies de R offrent de plus des aides à l'interprétation, notamment graphiques, statistiques, plus complètes et plus explicites que celles des librairies écrites en Python. Il serait néanmoins facile de transposer les outils proposés pour une exploitaiton efficace en Python.
@@ -57,8 +57,8 @@ La résolution des questions de discrimination ou opacité d'un algorithme  est 
 ## 3 Détection d'une discrimination
 La première difficulté réside dans la façon de définir une dicrimination, notamment d'un point de vue légal, puis de traduire cette défition en une quantité mesurable afin de construire des outils de détection. Ces différents points sont illustrés par deux exemples ou cas d'usage:
 
-- [Adult census]() Analyse loyale d'un jeu de données. Epxloration et  détection d'une discrimination individuelle par *testing* ou de groupe par estimation d'un impact disproportionné: *disparate impact* (DI) estimatIon par intervalle de confiance [(Besse et al. 2018-a)](https://arxiv.org/abs/1807.06362). Biais de la base d'apprentissage et biais des prévisions; débiaisage naïf.
-- [Propublica]() 
+- [Adult census](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/Adult-R-FairDataAnalysis.ipynb) Analyse loyale d'un jeu de données. Epxloration et  détection d'une discrimination individuelle par *testing* ou de groupe par estimation d'un impact disproportionné: *disparate impact* (DI) estimatIon par intervalle de confiance [(Besse et al. 2018-a)](https://arxiv.org/abs/1807.06362). Biais de la base d'apprentissage et biais des prévisions; débiaisage naïf.
+- [Propublica](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/Propublica/CompasDisparate.ipynb) 
 
 ## 4 Correction d'une discrimination
 Illustration de [del Barrio et al. (2018)](https://arxiv.org/pdf/1806.03195).
