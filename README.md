@@ -1,14 +1,15 @@
 <a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:left; max-width: 130px; display: inline" alt="INSA"/></a> 
 <a href="http://www.univ-tlse3.fr/" ><img src="http://www.univ-tlse3.fr/medias/photo/ut3pres_logoq_1372757033342.jpg?ID_FICHE=49702" style="float:right; max-width: 250px; display: inline"  alt="insa"/></a>
-<a href="http://wikistat.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/wikistat.jpg" style="float:right; max-width: 250px; display: inline"  alt="Wikistat"/></a>
+<a href="http://wikistat.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/wikistat.jpg" style="float:right; max-width: 250px; display: inline"  alt="Wikistat"/></a> 
+<br>  </br>
 
 # Apprentissage Statistique Loyal pour IA Ethique
-## Outils pédagogique
+## Ressources pédagogiques
 
 ## *Fair Machine Learning for Ethical AI: educational resources*
 
 
-#### Philippe Besse(1) et Jean-Michel Loubes(2)
+#### [Philippe Besse](https://www.math.univ-toulouse.fr/~besse/)(1) et [Jean-Michel Loubes](https://perso.math.univ-toulouse.fr/loubes/)(2)
 
 (1) Université de Toulouse -- INSA
 
@@ -36,6 +37,8 @@ Les outils sont déployés sous la forme de tutoriels: calepins ou *jupyter note
 
 Le choix a été fait de développer les calepins avec le [langage R](https://github.com/wikistat/Intro-R) plus simple et plus intuitif que [Python](https://github.com/wikistat/Intro-Python). Les différentes librairies de R offrent de plus des aides à l'interprétation, notamment graphiques, statistiques, plus complètes et plus explicites que celles des librairies écrites en Python. Il serait néanmoins facile de transposer les outils proposés pour une exploitaiton plus efficace en Python.
 
+<img src="https://s14-eu5.startpage.com/cgi-bin/serveimage?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1a%2F17%2F95%2F1a1795bc25875e8644999af9534e34ab.jpg&sp=830af7d9d0d4008220ea00bc427d8062"
+     style="float:center; max-width: 500px; display: inline"  alt="Wikistat" />Le Chat par Geluck<br>
 
 ## 2 Principes éthiques abordés ou non par la loi
 Trois aspects majeurs sont à considérer et détaillés par [Besse et al. 2018-b](https://hal.archives-ouvertes.fr/hal-01886699v1)
