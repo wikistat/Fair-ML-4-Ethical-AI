@@ -15,55 +15,65 @@
 (2) Université de Toulouse -- Paul Sabatier
 
 ## 1 Introduction
-### 1.1 Cadre général
-Associant données massives (*big data*) et algorithmes d’[apprentissage automatique](https://github.com/wikistat/Apprentissage) (*machine learning*), la puissance des outils de décision automatique suscite autant d’espoir que de craintes. De nombreux textes législatifs européens (RGPD) et français récemment promulgués tentent d’encadrer les usages de ces outils. Laissant de côté les problèmes bien identifiés par la CNIL de *confidentialité des données*  et ceux d’*entrave à la concurrence*, nous nous focalisons sur les outils relatifs aux questions éthiques soulevées dans le rapport: [Enjeux Ethiques de l’Algorithme et de l’Intelligence artificielle](https://www.cnil.fr/fr/comment-permettre-lhomme-de-garder-la-main-rapport-sur-les-enjeux-ethiques-des-algorithmes-et-de) (15/12/2017) de la CNIL ou encore dans le [rapport Villani](https://www.aiforhumanity.fr/pdfs/9782111457089_Rapport_Villani_accessible.pdf) (2018, partie 5).
+### 1.1 IA au quotidien et apprentissage statistique
+Associant données massives (*big data*) et algorithmes d’[apprentissage automatique](https://github.com/wikistat/Apprentissage) (*machine learning*), la puissance des outils de décision automatique suscite autant d’espoir que de craintes. Ces algorithmes, acteurs  de l'Intelligence Artificielle (IA) au quotidien, construisent des décisions issues de prévisions obtenues après estimation ou entraînement sur une base de données personnelles: attribution d'un crédit et prévision du risque de mauvais paiement; profilage et publicité en ligne; prime d'assurance auto et conduite accidentogène; imagerie médicale et risque de malignité d'une tumeur; passé comportemental, environnement social et risque de récidive. 
 
- La mise en perspective détaillée des textes juridiques ([Besse et al. 2018-b](https://hal.archives-ouvertes.fr/hal-01886699v1)), face à la complexité et l’opacité des algorithmes d’apprentissage, révèle d’importantes disruptions technologiques soulevant des problèmes ou risques sérieux lorsques des décisions, susceptibles d'impacter des personnes physiques ou même simplement de les profiler, sont le résultat de procédures algorithmiques exécutées sur des données personnelles. Trois questions sont à prendre en compte:
+Laissons de côté les effets médiatiques rabâchés : véhicule autonome devant choisir entre un landau et un fauteuil roulant, robot humanoïde affectueux, lois d'Azimov de la robotique, transhumanisme, singularité
+technologie... bref les débats de science fiction ou encore ceux anxiogènes: destruction des emplois même qualifiés, robots armés, big data big brother... 
+
+### 1.2 IA, loi et usage éthique
+Laissons à la CNIL les problèmes bien identifiés de *confidentialité des données*  et à l'Autorité de la Concurrrence ceux d’*entrave à la concurrence*. Nous nous focalisons sur les algorithmes d’apprentissage statistique, pour aborder les [Enjeux Ethiques de l’Algorithme et de l’Intelligence artificielle](https://www.cnil.fr/fr/comment-permettre-lhomme-de-garder-la-main-rapport-sur-les-enjeux-ethiques-des-algorithmes-et-de) (CNIL 2017) également très présents dans le [rapport Villani](https://www.aiforhumanity.fr/pdfs/9782111457089_Rapport_Villani_accessible.pdf) (2018, partie 5). 
+
+De nombreux textes législatifs européens (RGPD avril 2018) et français récemment promulgués (juin 2018) tentent d’encadrer les usages de ces outils.  La mise en perspective détaillée de ces textes ([Besse et al. 2018-b](https://hal.archives-ouvertes.fr/hal-01886699v1)), face à la complexité et l’opacité des algorithmes d’apprentissage, révèle d’importantes disruptions technologiques. Ainsi, des vides juridiques  soulevent des problèmes ou risques sérieux lorsques des décisions, susceptibles d'impacter des personnes physiques ou même simplement de les profiler, sont le résultat de procédures algorithmiques exécutées sur des données personnelles. Seules des pratiques éthiques sont alors susceptibles de combler les lacunes pour palier ces problèmes.
+
+### 1.3 Objectif
+Le principal objectif du présent dépôt est de mettre à disposition des ressources pédagogiques (tutoriels) afin de *promouvoir des pratiques loyales et éthiques* indispensables au développement de la confiance des citoyens, justiciables, consommateurs, envers l'IA pour en faire accepter l'usage au quotidien.
+
+Sur des cas d'usage bien identifiés, des tutoriels (*jupyter notebook*) permettent de poser concrètement les questions de loyauté des algorithmes et d'en évaluer les solutions récemment proposées et régulièrement mises à jour sur ce dépôt.
+
+### 1.4 Environnement technique
+Les outils sont déployés sous la forme de tutoriels: calepins ou *jupyter notenooks*. Des compléments d'informations sur les outils et algorithmes  sont à rechercher dans les autres tutoriels du dépôt [`github/wikistat`](https://github.com/wikistat). 
+
+Le choix a été fait de développer les calepins avec le [langage R](https://github.com/wikistat/Intro-R) plus simple et plus intuitif que [Python](https://github.com/wikistat/Intro-Python). Les différentes librairies de R offrent de plus des aides à l'interprétation, notamment graphiques, statistiques, plus complètes et plus explicites que celles des librairies écrites en Python. Il serait néanmoins facile de transposer les outils proposés pour une exploitaiton plus efficace en Python.
+
+
+## 2 Principes éthiques abordés ou non par la loi
+Trois aspects majeurs sont à considérer et détaillés par [Besse et al. 2018-b](https://hal.archives-ouvertes.fr/hal-01886699v1)
+
+### 2.1 Qualité des décisions algorithmiques
+ Les algorithmes d'apprentissage ne sont pas prouvables, certifiables de façon déterministe comme des algorithmes procéduraux. Néanmoins, l'évaluation de la qualité d'une décision algorithmique est une question essentielle lorsqu'il s'agit, par exemple, de discuter de l'opportunité d'une opération chirurgicale ou encore de la libération conditionnelle d'un détenu. Malheureusement la loi est désespérément muette sur ce sujet et n'oblige en rien à la communication des estimations des qualités des prévisions conduisant aux décisions, comme c'est le cas pour un sondage d'opinion. Une loyauté élémentaire consiste donc à associer chaque décision à une estimation statistique de la [qualité de prévision](http://wikistat.fr/pdf/st-m-app-risque.pdf); qualité estimée  sur un échantillon test indépendant (capacité de généralisation). Il n'est pas possible de faire comme si 3% d'erreur en reconnaissance d'images c'est pareil que 30% à 40% en prévision de la récidive. Il faut sortir du déterminisme binaire : vrai / faux. Avec la loi actuelle un humain doit assumer la décision et, d'un point de vue éthique, il n'a pas obligation de résultat mais une obligation de moyens et aussi de transparence sur la qualité de la décision.
+
+### 2.2 Discrimination et biais algorithmique
+La loi française comme le règlement européen ne considère que la notion de discirmination envers une personne. Il est apparemment facile d’opérer individuellement du *testing* d’algorithme en modifiant la modalité de la variable sensible (femme en homme, noir en blanc, vieux en jeune...) d’une personne pour provoquer une éventuelle bascule et mettre en évidence le caractère dicriminatoire d'une décision. Malheureusement, de nombreux exemples montrent que, même protégée et absente des modèles, une information sensible est facilement déduite des autres informations ou variables disponibles. Le *testing* n'est pas probant alors que la discrimination est présente. Une approche basée sur la notion de discrimination individuelle est insuffisante. 
+
+Comme le signale le rapport Villani (2018), il serait important de  définir une notion de discrimination (*discrimination impact assessment* ou DIA) envers un groupe. C'est ce qui est pratiqué de longue date (1971) aux USA et reconnu dans certains cas par les tribuanux avec une approche statistique de la mesure de la discrimination. Plusieurs indicateurs sont utilisables mais le plus employé et discuté considère la notion de d'*impact disproportionné* (*disparate impact*). A nouveau, la variable sensible et protégée doit être connue (c'est le cas aux USA) pour estimer l'impact disproportionné mais celle-ci peut l'être sous une une forme cryptée ou en protégeant l'anonymat des personnes (confidentialité k-différentielle). 
+
+Des biais, discriminations ou injustices ayant été identifiées, dans la base d'apprentissage et / ou dans la prévision, des outils statistiques et algorithmiques existent (*fair learning*) pour en corriger ou au mois en atténuer les effets. Si la base d'apprentissage est biaisée, ce qui est très généralement la source principale de discrimination, corriger le biais induit une forme de discrimination positive qui relève d'une décision politique et humaine, pas algorithmique.
  
-- **qualité** des décisions algorithmiques et erreur de prévision;
-- risque de **discrimination** et biais des algorithmes;
-- droit à l'**explication**  et transparence.
+### 2.3 Droit à l'explication
+Les algorithmes d'apprentissage statistique largement utilisés, quand ils sont les plus efficaces, sont généralement profondément opaques de même que les décisions qui en découlent sauf dans les cas de modèles statistiques ou arbres de décision élémentaires. Néanmoins, la recherche progresse pour apporter des aides à l'interprétation, pour aider à comprendre, au moins localement pour une personne impactée au sens de la loi, les raisons ou causes d'une décision algorithmique. Il s'agit par exemple d'identifier les variables ou facteurs qui influencent le plus et dans quel sens une décision pour qu'un humain, respectueux de la législation, en déduise des explications intelligibles adressées à la personne qui en fait la demande. 
 
+Finalement, La résolution des questions de discrimination ou opacité d'un algorithme  est le résultat d'un compromis, si possible le meilleure, afin de réduire le biais ou améliorer l'expliquabilité d'une décision tout en évitant de trop en dégrader la qualité. Ces points seront abordés en pratique dans les sections suivantes. 
 
-### 1.2 Objectifs
+## 3 Pratiques loyales
+### 3.1 Mesurer la qualité d'une décision
 
-Ce dépôt regroupe des outils poursuivant plusieurs objectifs mais principalement, il s'agit d'illuster sur des *cas d'usage concrets, réalistes et pédagogiques* les questions éthiques soulevées par l'usage d'algorithmes d'apprentissage ainsique que les outils statistiques permettant: 
+Les  stratégies d'apprentissage sont rôdées et bien connues. L'objectif est d'optimiser le choix dun algorithme afin, obligation de moyen, d'aboutir à la prévision minimisant un risque et donc à la meilleure décision. L'[estimation de l'erreur](http://wikistat.fr/pdf/st-m-app-risque.pdf) est donc intégrée à la démarche, il suffit de la faire connaôitre par souci de transparence.
 
-- de détecter la présence de biais et donc des sources de discrimination
-   - dans une base d'apprentissage,
-   - dans une décision algorithmique apprise sur cette base;
-- d'évaluer les stratégies de correction d'un biais dans un objectif d'apprentissage loyal (*fair learning*) pour réduire cette discirmination ou opérer une discrimination positive;
-- de fournir des aides à l'interprétation d'un algorithme opaque dans l'objectif de pouvoir répondre à des *demandes d'explication*.
+Les difféentes étapes de l'apprentissage supervisé sont détaillées et  [illustrées par ailleurs](https://github.com/wikistat/Apprentissage) sur de nombreux cas d'usage.
 
-*Il s'agit finalement d'illustrer en pratique et de façon pédagogique les réflexions de [Besse et al. (2018-b)](https://hal.archives-ouvertes.fr/hal-01886699v1) sur ces questions*. 
-
-### 1.3 Environnement technique
-Les outils sont déployés sous la forme de tutoriels: calepins ou *jupyter notenooks*. Des compléments d'informations sur les outils et algorithmes utilisés sont à rechercher dans les autres tutoriels du dépôt [`github/wikistat`](https://github.com/wikistat). 
-
-Le choix a été fait de développer les calepins avec le [langage R](https://github.com/wikistat/Intro-R) plus simple et plus intuitif que [Python](https://github.com/wikistat/Intro-Python). Les différentes librairies de R offrent de plus des aides à l'interprétation, notamment graphiques, statistiques, plus complètes et plus explicites que celles des librairies écrites en Python. Il serait néanmoins facile de transposer les outils proposés pour une exploitaiton efficace en Python.
-
-## 2. Qualité d'une décision algorithmique
-### 2.1 Qualité et erreur de prévision
-En apprentissage statistique, la justesse de la décision dépend de la [qualité d’une prévision](http://wikistat.fr/pdf/st-m-app-risque.pdf) et donc de la qualité d’un modèle ou d’un algorithme. Cette dernière dépend de la représentativité ou biais des données initiales, de l’adéquation du modèle au problème posé et dela quantité (variance) de bruit résiduel. Elle est [évaluée](http://wikistat.fr/pdf/st-m-app-risque.pdf) sur un échantillon test indépendant ou par validation croisée (Monte Carlo) mais reste indicative sous la forme d’un risque probabiliste d’erreur.
-
-Les méthodes de prévisions sont entraînées sur les données d’apprentissage, c’est donc la qualité de celles-ci qui est en premier lieu déterminante ; rappelons le vieil adage : *garbage in, garbage out*. Leur volume peut être un facteur utile de qualité mais seulement si les données sont bien représentatives de l’objectif et pas biaisées. Dans le cas contraire des téraoctets n’y font rien.
-
-### 2.2 Qualité, textes de loi et éthique
-L'évaluation de la qualité d'une décision algorithmique est une question essentielle lorsqu'il s'agit, par exemple, de discuter de l'opportunité d'une opération chirurgicale ou encore de la libération conditionnelle d'un détenu. Malheureusement la loi est désespérément muette sur ce sujet et n'oblige en rien à la communication des estimations des qualités des prévisions conduisant aux décisions, comme c'est le cas pour un sondage d'opinion. D'un point de vue éthique et pour pallier les insuffisances de la législation, il n'y a pas d'*obligation de résultat* mais en revanche une *obligation de moyens*; mettre en oeuvre la méthode la plus adaptée pour atteindre les qualités optimales de résultat. 
-
-### 2.3 Discrimination, explicabilité et qualité
-La résolution des questions de discrimination ou opacité d'un algorithme  est le résultat d'un compromis, si possible le meilleure, afin de réduire le biais ou améliorer l'expliquabilité d'une décision tout en évitant de trop en dégrader la qualité. Ces points seront traités dans les sections suivantes. 
-
-## 3 Détection d'une discrimination
+Les méthodes de prévisions sont entraînées sur les données d’apprentissage dont la qualité est déterminante. Les phases d'extraction, vérification, nettoyage, préparation des données sont critiques et doivent être conduites avec un soin particulier: *garbage in, garbage out*. Le volume des données peut être un facteur utile de qualité mais secondaire, seulement si celles-ci sont bien représentatives de l’objectif et pas biaisées. Dans le cas contraire des téraoctets n’y font rien.
+ 
+### 3.2 Détecter un biais, une discrimination
 La première difficulté réside dans la façon de définir une dicrimination, notamment d'un point de vue légal, puis de traduire cette défition en une quantité mesurable afin de construire des outils de détection. Ces différents points sont illustrés par deux exemples ou cas d'usage:
 
-- [Adult census](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/Adult-R-FairDataAnalysis.ipynb) Analyse loyale d'un jeu de données. Epxloration et  détection d'une discrimination individuelle par *testing* ou de groupe par estimation d'un impact disproportionné: *disparate impact* (DI) estimatIon par intervalle de confiance [(Besse et al. 2018-a)](https://arxiv.org/abs/1807.06362). Biais de la base d'apprentissage et biais des prévisions; débiaisage naïf.
+- [Adult census](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/Adult-R-FairDataAnalysis.ipynb) Analyse loyale d'un jeu de données. Epxloration et  détection d'une discrimination individuelle par *testing* ou de groupe par estimation d'un impact disproportionné: *disparate impact* (DI) estimatIon par intervalle de confiance [(Besse et al. 2018-a)](https://arxiv.org/abs/1807.06362). Biais de la base d'apprentissage et biais des prévisions.
 - [Propublica](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/Propublica/CompasDisparate.ipynb) 
 
-## 4 Correction d'une discrimination
-Illustration de [del Barrio et al. (2018)](https://arxiv.org/pdf/1806.03195).
+###  3.3 Correction d'une discrimination
+Illustration de [del Barrio et al. (2018)](https://arxiv.org/pdf/1806.03195)... En chantier.
 
-## 5 Droit à l'explication
+### 3.4 Droit à l'explication
 Illustration de [Bachoc et al. (2019)]()... En chantier.
 
 ## Références
