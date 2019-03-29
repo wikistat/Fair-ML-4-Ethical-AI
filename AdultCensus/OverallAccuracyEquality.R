@@ -2,7 +2,7 @@
 h<-function(x){x[1]*x[4]/(x[2]*x[3])}
 grad_h<-function(x){c(x[4]/(x[2]*x[3]), -x[1]*x[4]/((x[2]^2)*x[3]), -x[1]*x[4]/((x[3]^2)*x[2]), x[1]/(x[3]*x[2]))}
 
-OAE <- function(X,S,Y,P,alpha){
+OAE <- function(X,S,Y,P,alpha=0.05){
   #S: index column protected variable
   #Y: index column true target
   #P: index column prediction
