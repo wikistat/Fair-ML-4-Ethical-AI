@@ -1,20 +1,21 @@
 ###############################################################
-#                  Calcul du disparate impact                 #
-#                               #
+# Estimation du disparate impact par intervalle de confiance  #
+#                                                             #
 #  Cette fonction prend deux arguments en entrée :            #
-#     - Une matrice binaire X dont la dernière colonne        #
-#       contient la décision à analyser                       #
+#     - Une matrice binaire X                                 #
 #     - L'indice S de la variable de X considérée comme       #
 #       sensible                                              #
+#     - l'indice de la colonne de la la décision à analyser   #                                            #
 #  Et renvoie la valeur Tn du disparate impact                #
-#                                                             #
+#   et des bornes de l'intrvalle de confiance au seuil        #
+#   alpha par défaut 0.05                                     #
 ###############################################################
 
 
 h<-function(x){x[1]*x[4]/(x[2]*x[3])}
 grad_h<-function(x){c(x[4]/(x[2]*x[3]), -x[1]*x[4]/((x[2]^2)*x[3]), -x[1]*x[4]/((x[3]^2)*x[2]), x[1]/(x[3]*x[2]))}
 
-disparate <- function(X,S,Y,alpha){
+disparate <- function(X,S,Y,alpha=0.05){
   if(S>ncol(X)) stop(paste("L'argument S doit être compris entre 1 et ",ncol(X)-1))
   n<-nrow(X)
   pi_1<-sum(X[,S])/n #estimated P(S=1)
