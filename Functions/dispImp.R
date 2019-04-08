@@ -1,22 +1,25 @@
 ###############################################################
 # Estimation du disparate impact par intervalle de confiance  #
 #                                                             #
-#  Cette fonction prend deux arguments en entrée :            #
-#     - Une matrice binaire X                                 #
-#     - L'indice S de la variable de X considérée comme       #
-#       sensible                                              #
-#     - l'indice de la colonne de la la décision à analyser   #                                            #
-#  Et renvoie la valeur Tn du disparate impact                #
-#   et des bornes de l'intrvalle de confiance au seuil        #
-#   alpha par défaut 0.05                                     #
+#  Cette fonction prend trois arguments en entrée :           #
+#    - La variable binaire considérée comme sensible          #
+#    - La variable cible Y ou sa prévision                    #
+#    - alpha par défaut 0.05                                  #
+#  Elle renvoie la valeur Tn du disparate impact              #
+#   et des bornes de l'intervalle de confiance                #
+# Attention à l'ordre lexicographique des niveaux des facteurs#
+# Le premier est par convention celui jugé défavorable        #
 ###############################################################
 
 
 h<-function(x){x[1]*x[4]/(x[2]*x[3])}
 grad_h<-function(x){c(x[4]/(x[2]*x[3]), -x[1]*x[4]/((x[2]^2)*x[3]), -x[1]*x[4]/((x[3]^2)*x[2]), x[1]/(x[3]*x[2]))}
 
-disparate <- function(X,S,Y,alpha=0.05){
-  if(S>ncol(X)) stop(paste("L'argument S doit être compris entre 1 et ",ncol(X)-1))
+
+dispImp <- function(Vs,Vy,alpha=0.05){
+  X=data.frame(as.integer(Vs)-1,as.integer(Vy)-1)
+  S= 1
+  Y= 2
   n<-nrow(X)
   pi_1<-sum(X[,S])/n #estimated P(S=1)
   pi_0<-1-pi_1 #estimated P(S=0)
@@ -32,8 +35,8 @@ disparate <- function(X,S,Y,alpha=0.05){
   upper_lim<-Tn+(sigma*qnorm(1-alpha/2,mean=0, sd=1))/sqrt(n)
   
   #BER
-  BER<-0.5*(p_0/pi_0+1-p_1/pi_1)
-  return(c(lower_lim,Tn,upper_lim, BER))
+  # BER<-0.5*(p_0/pi_0+1-p_1/pi_1)
+  return(c(lower_lim,Tn,upper_lim))
 }
 
 #cov(cbind(coded_data[,8]*(1-coded_data[,1]), coded_data[,8]*coded_data[,1], 1-coded_data[,1], coded_data[,1]))
