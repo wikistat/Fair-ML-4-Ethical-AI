@@ -15,7 +15,6 @@
 h<-function(x){x[1]*x[4]/(x[2]*x[3])}
 grad_h<-function(x){c(x[4]/(x[2]*x[3]), -x[1]*x[4]/((x[2]^2)*x[3]), -x[1]*x[4]/((x[3]^2)*x[2]), x[1]/(x[3]*x[2]))}
 
-
 dispImp <- function(Vs,Vy,alpha=0.05){
   X=data.frame(as.integer(Vs)-1,as.integer(Vy)-1)
   S= 1
@@ -27,7 +26,6 @@ dispImp <- function(Vs,Vy,alpha=0.05){
   p_0<-sum((1-X[,S])*X[,Y])/n #estimated P(g(X)=1, S=0)
   Tn<-p_0*pi_1/(p_1*pi_0) #statistic
   grad<-grad_h(c(p_0,p_1,pi_0,pi_1))
-  #Cov_4<-cov(cbind(coded_data[,8]*(1-coded_data[,1]), coded_data[,8]*coded_data[,1], 1-coded_data[,1], coded_data[,1]))
   Cov_4<-diag(rep(0,4))+cbind(c(0, -p_0*p_1, pi_1*p_0, -pi_1*p_0),c(0, 0, -pi_0*p_1, pi_0*p_1),c(0,0,0,-pi_0*pi_1), c(0,0,0,0))
   Cov_4<-Cov_4+t(Cov_4)+diag(c(p_0*(1-p_0), p_1*(1-p_1),pi_0*pi_1,pi_0*pi_1))
   sigma<-sqrt((grad%*%Cov_4)%*%t(t(grad)))
@@ -39,4 +37,3 @@ dispImp <- function(Vs,Vy,alpha=0.05){
   return(c(lower_lim,Tn,upper_lim))
 }
 
-#cov(cbind(coded_data[,8]*(1-coded_data[,1]), coded_data[,8]*coded_data[,1], 1-coded_data[,1], coded_data[,1]))
