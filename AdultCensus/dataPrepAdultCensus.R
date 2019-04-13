@@ -1,5 +1,5 @@
 dataPrepAdultCensus = function(path=""){
-  data = read.table(paste(path,"adultCensus.dat",sep=""),
+  data = read.table(paste(path,"adultTrainTest.dat",sep=""),
 					sep=",",header=F,col.names=c("age", "workClass", "fnlwgt", "education", 
                     "educNum","mariStat", "occup", "relationship", "origEthn","sex",
                     "capitalGain", "capitalLoss", "hoursWeek","nativCountry", "income"),
