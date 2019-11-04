@@ -1,16 +1,16 @@
 
-<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:left; max-width: 200px; display: inline" alt="INSA"/> 
 
-<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="float:right; max-width: 200px; display: inline"  alt="insa"/></a>
-<br>  </br>
-<br>  </br>
-<br>  </br>
+
+<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="float:left; max-width: 200px; display: inline"  alt="insa"/></a>
+
+<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:right; max-width: 200px; display: inline" alt="INSA"/> 
+
+
 
 # Apprentissage Statistique Légal pour IA Éthique
 ## Ressources pédagogiques
 
-## *Legal Statistical Learning for Ethical AI*
-### *Educational resources*
+## *Legal Statistical Learning for Ethical AI*: *Educational resources*
 
 
 #### [Philippe Besse](https://www.math.univ-toulouse.fr/~besse/) (1), [Céline Castets Renard](https://www.castetsrenard.org/) (2), [Jean-Michel Loubes](https://perso.math.univ-toulouse.fr/loubes/)(3) & [Laurent Risser](http://laurent.risser.free.fr/) (4)
