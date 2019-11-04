@@ -1,5 +1,9 @@
-<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:left; max-width: 130px; display: inline" alt="INSA"/></a> 
-<a href="http://www.univ-tlse3.fr/" ><img src="http://www.univ-tlse3.fr/medias/photo/ut3pres_logoq_1372757033342.jpg?ID_FICHE=49702" style="float:right; max-width: 250px; display: inline"  alt="insa"/></a>
+
+<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:left; max-width: 200px; display: inline" alt="INSA"/> 
+
+<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="float:right; max-width: 200px; display: inline"  alt="insa"/></a>
+<br>  </br>
+<br>  </br>
 <br>  </br>
 
 # Apprentissage Statistique Légal pour IA Éthique
@@ -72,9 +76,10 @@ Des biais, discriminations ou injustices ayant été identifiées, dans la base 
 La première difficulté réside dans la façon de définir une discrimination, notamment d'un point de vue légal, puis de traduire cette définition en une quantité mesurable afin de construire des outils de détection. Suivant en cela Friedler et al. (2019) nous considérons qu'il n'est pas utile de multiplier les critères de détection de biais car beaucoup sont similaires et donc très corrélés entre eux. 
 
 Trois niveaux de biais mesurés par des indicateurs de plus en plus consensuels dans la communauté scientifique sont considérés:
-- discrimination de groupe et effet disproportionné (*disparate impact* ou *DI*),
-- comparaison des précisions ou taux d'erreur conditionnellement à la variable sensible,
-- comparaison des taux de faux positifs ou faux négatifs conditionnellement à la variable sensible.
+
+- discrimination de groupe et effet disproportionné: *disparate impact* (*DI*) ou *demographic equality*,
+- comparaison des précisions ou taux d'erreur conditionnellement à la variable sensible: *overall error equality*,
+- comparaison des taux de faux positifs et vrais négatifs conditionnellement à la variable sensible: *equality of odds*
 
 Tous ces niveaux de biais sont caractérisés par des indicateurs dont l'estimation est proposée par des intervalles de confiance (Besse et al. 2018) afin d'en contrôler la précision.
 

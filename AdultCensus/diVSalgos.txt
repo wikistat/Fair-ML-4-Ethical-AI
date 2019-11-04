@@ -12,7 +12,7 @@ condBinTree       0.331 0.375 0.419 85.16
 randomForest      0.318 0.363 0.407 85.98
 wRandomForest     0.32 0.365 0.409  85.91
 condRandForest    0.349 0.395 0.442 85.74
-
+condRFdiscrPos    0.506 0.562 0.619 85.24
  
 
 
