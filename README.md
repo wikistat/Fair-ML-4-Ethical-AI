@@ -1,11 +1,8 @@
 
 
 
-<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg"  height="75"  alt="insa"/></a>
-
-<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:right; max-width: 200px; display: inline" alt="INSA"/> 
-
-
+<a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg"  height="80"  alt="ANITI"/></a>
+<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png"  height="75" alt="INSA" style="float:right"/> 
 
 # Apprentissage Statistique Légal pour IA Éthique
 ## Ressources pédagogiques
