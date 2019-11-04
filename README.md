@@ -1,7 +1,7 @@
 
 
 
-<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="float:left; max-width: 200px; display: inline"  alt="insa"/></a>
+<a href="http://www.univ-tlse3.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="float:left; height="40"; display: inline"  alt="insa"/></a>
 
 <a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:right; max-width: 200px; display: inline" alt="INSA"/> 
 
