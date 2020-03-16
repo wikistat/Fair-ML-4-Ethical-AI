@@ -1,6 +1,6 @@
-<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/logo-insa.jpg" style="height:100px; display: inline"  alt="INSA"/></a> 
-<a href="https://observatoire-ia.ulaval.ca/" ><img src="https://observatoire-ia.devbeet.com/app/uploads/2019/06/oia-share.png" style="height:100px; display: inline" alt="ObvIA"/></a> 
-<a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="height:100px; display: inline" alt="ANITI"/></a> 
+<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/logo-insa.jpg" height="100"  alt="INSA"/></a> 
+<a href="https://observatoire-ia.ulaval.ca/" ><img src="https://observatoire-ia.devbeet.com/app/uploads/2019/06/oia-share.png" height="100" alt="ObvIA"/></a> 
+<a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" height="100" alt="ANITI"/></a> 
 # Evaluation des Risques des Algorithmes d'Apprentissage Statistique de l'IA: ressources pédagogiques
 
 ## *Risk Assessment of Statistical Learning AI Algorithms*:  *educational resources*
@@ -20,7 +20,7 @@
 ### 1.1 IA post RGPD éthique et/ou légale 
 La publication du RGPD (2018) et son intégration dans les lois nationales a considérablement impacté la gestion des données dont celles impliquant es personnes physiques. La CNIL a pour mission de s'assurer que ce réglement est correctement appliqué et fournit les outils permettant [évaluation de l'impact sur la vie privée](https://www.cnil.fr/fr/gerer-les-risques): *privacy impact assessment*. Par ailleurs, l'Autorité de la Concurrrence traque les risques d’*entrave à la concurrence*: moteurs de recherche, sites de comparateurs de prix, *pricing* automatique.
 
-Le considérant (71) du RGPD (2018) précisait:
+Le considérant (71) du RGPD (2018) recommande:
 
 - [...] Afin d’assurer un traitement équitable et transparent à l’égard de la personne concernée, [...] le responsable du traitement devrait utiliser des *procédures mathématiques ou statistiques* adéquates aux fins du profilage, appliquer les mesures techniques et organisationnelles appropriées pour faire en sorte, en particulier, que les facteurs qui entraînent des erreurs dans les données à caractère personnel soient corrigés et que le *risque d’erreur soit réduit au minimum*, sécuriser les données à caractère personnel d’une manière qui *tienne compte des risques* susceptibles de peser sur les intérêts et les droits de la personne concernée, et prévenir, entre autres, les *effets discriminatoires* [...]
 
@@ -102,7 +102,7 @@ Le problème s’énonce simplement : un algorithme entraîné à prendre des d
 ### 3.2 Résultats
 Les données incluent un biais de société important estimé sur un échantillon de 45 000 personnes : seulement 11,6 % des femmes ont un revenu élevé contre 31,5% des hommes. Le rapport: *DI=0,38* est donc très disproportionné. Différents modèles ou algorithmes sont entraînés sur une partie (apprentissage) des données puis exécutés sur la partie test restante. Les résultats sont regroupés dans la figure 1.
 
-![40% center](resDIdiscrim.png)
+![nn]("resDIdiscrim.png" | height="100")
 
 <img src="resDIdiscrim.png" height="100"  alt="graphe">
 
