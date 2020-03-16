@@ -55,7 +55,7 @@ Le choix a été fait de développer les calepins avec les langages [R](https://
 
 ## 2 Risques des impacts sociétaux de l'apprentissage statistique
 
-Trois aspects majeurs sont à considérer et détaillés par [Besse et al. 2018b](https://hal.archives-ouvertes.fr/hal-01886699) pour prendre en compte voire évaluer les risques des impacts sociétaux des algorithmes d'apprentissage statistique.
+Trois aspects majeurs sont à considérer et détaillés par [Besse et al. (2018b)](https://hal.archives-ouvertes.fr/hal-01886699) pour prendre en compte voire évaluer les risques des impacts sociétaux des algorithmes d'apprentissage statistique.
 
 
 ### 2.1 Risques de biais discriminatoires
@@ -102,7 +102,7 @@ Le problème s’énonce simplement : un algorithme entraîné à prendre des d
 ### 3.2 Résultats
 Les données incluent un biais de société important estimé sur un échantillon de 45 000 personnes : seulement 11,6 % des femmes ont un revenu élevé contre 31,5% des hommes. Le rapport: *DI=0,38* est donc très disproportionné. Différents modèles ou algorithmes sont entraînés sur une partie (apprentissage) des données puis exécutés sur la partie test restante. Les résultats sont regroupés dans la figure 1.
 
-![nn]("resDIdiscrim.png" | height="100")
+![nn]("resDIdiscrim.png" | height="100") 
 
 <img src="resDIdiscrim.png" height="100"  alt="graphe">
 
