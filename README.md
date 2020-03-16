@@ -1,34 +1,30 @@
+<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/logo-insa.jpg" style="height:100px; display: inline"  alt="INSA"/></a> 
+<a href="https://observatoire-ia.ulaval.ca/" ><img src="https://observatoire-ia.devbeet.com/app/uploads/2019/06/oia-share.png" style="height:100px; display: inline" alt="ObvIA"/></a> 
+<a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" style="height:100px; display: inline" alt="ANITI"/></a> 
+# Evaluation des Risques des Algorithmes d'Apprentissage Statistique de l'IA: ressources pédagogiques
 
-
-
-<a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg"  height="80"  alt="ANITI"/></a>
-<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png"  height="75" alt="INSA" style="float:right"/> 
-
-# Apprentissage Statistique Légal pour IA Éthique
-## Ressources pédagogiques
-
-## *Legal Statistical Learning for Ethical AI*: *Educational resources*
+## *Risk Assessment of Statistical Learning AI Algorithms*:  *educational resources*
 
 
 #### [Philippe Besse](https://www.math.univ-toulouse.fr/~besse/) (1), [Céline Castets Renard](https://www.castetsrenard.org/) (2), [Jean-Michel Loubes](https://perso.math.univ-toulouse.fr/loubes/)(3) & [Laurent Risser](http://laurent.risser.free.fr/) (4)
 
-(1) Université de Toulouse -- INSA
+(1) Université de Toulouse -- INSA & [ObvIA](https://observatoire-ia.ulaval.ca/)
 
-(2) Université d'Ottawa & [ANITI](https://aniti.univ-toulouse.fr/)
+(2) Université d'Ottawa, [ANITI](https://aniti.univ-toulouse.fr/), & [ObvIA](https://observatoire-ia.ulaval.ca/)
 
 (3) Université de Toulouse -- Paul Sabatier & [ANITI](https://aniti.univ-toulouse.fr/)
 
 (4) IMT - CNRS & [ANITI](https://aniti.univ-toulouse.fr/)
 
 ## 1 Introduction
-### 1.1 IA au quotidien et apprentissage statistique
-Associant données massives (*big data*) et algorithmes d’[apprentissage automatique](https://github.com/wikistat/Apprentissage) (*machine learning*), la puissance des outils de décision automatique suscite autant d’espoir que de craintes. Ces algorithmes, acteurs  de l'Intelligence Artificielle (IA) au quotidien, construisent des décisions issues de prévisions obtenues après estimation ou entraînement sur une base de données personnelles: attribution d'un crédit et prévision du risque de mauvais paiement; profilage et publicité en ligne; prime d'assurance auto et conduite accidentogène; imagerie médicale et détection de tumeurs; passé comportemental, environnement social et risque de récidive... 
+### 1.1 IA post RGPD éthique et/ou légale 
+La publication du RGPD (2018) et son intégration dans les lois nationales a considérablement impacté la gestion des données dont celles impliquant es personnes physiques. La CNIL a pour mission de s'assurer que ce réglement est correctement appliqué et fournit les outils permettant [évaluation de l'impact sur la vie privée](https://www.cnil.fr/fr/gerer-les-risques): *privacy impact assessment*. Par ailleurs, l'Autorité de la Concurrrence traque les risques d’*entrave à la concurrence*: moteurs de recherche, sites de comparateurs de prix, *pricing* automatique.
 
-Laissons de côté les effets médiatiques rabâchés : véhicule autonome devant choisir entre un landau et un fauteuil roulant, robot humanoïde affectueux, lois d'Azimov de la robotique, transhumanisme, singularité
-technologique... bref les débats de science fiction ou encore ceux sociétaux anxiogènes: destruction des emplois même qualifiés, robots armés, *big data big brother*... 
+Le considérant (71) du RGPD (2018) précisait:
 
-### 1.2 IA, usage éthique & légal
-Laissons à la CNIL les problèmes bien identifiés de *confidentialité des données*  et à l'Autorité de la Concurrrence ceux d’*entrave à la concurrence*. Nous nous focalisons sur les usages des algorithmes d’*apprentissage statistique*, pour aborder les 
+- [...] Afin d’assurer un traitement équitable et transparent à l’égard de la personne concernée, [...] le responsable du traitement devrait utiliser des *procédures mathématiques ou statistiques* adéquates aux fins du profilage, appliquer les mesures techniques et organisationnelles appropriées pour faire en sorte, en particulier, que les facteurs qui entraînent des erreurs dans les données à caractère personnel soient corrigés et que le *risque d’erreur soit réduit au minimum*, sécuriser les données à caractère personnel d’une manière qui *tienne compte des risques* susceptibles de peser sur les intérêts et les droits de la personne concernée, et prévenir, entre autres, les *effets discriminatoires* [...]
+
+Néanmoins, les risques provoqués par les impacts dus à l'opacité, aux biais, aux erreurs des décisions algorithmiques n'ont pas été suffisamment pris en compte dans la législation spécifique à l'IA. Ils ont été en revanche largement commentés dans de très nombreuses déclarations et chartes pour une IA éthique au service de l'humanité (sic). Citons par exemple: 
 
 - [Enjeux Éthiques de l’Algorithme et de l’Intelligence artificielle](https://www.cnil.fr/fr/comment-permettre-lhomme-de-garder-la-main-rapport-sur-les-enjeux-ethiques-des-algorithmes-et-de) (CNIL 2017) également très présents dans le 
 - [rapport Villani](https://www.aiforhumanity.fr/pdfs/9782111457089_Rapport_Villani_accessible.pdf) (2018, partie 5), la
@@ -36,93 +32,144 @@ Laissons à la CNIL les problèmes bien identifiés de *confidentialité des don
 - [Ethics Guidelines for Trustworthy AI
 Independant high-level expert group on Artificial Intelligence set up by the European Commission (2019)](https://ec.europa.eu/futurium/en/ai-alliance-consultation).
 
-[Fjeld et al. (2019)](https://ai-hr.cyber.harvard.edu/primp-viz.html) proposent une analyse sémantique et graphique de tous ces guides, rapports, chartes, déclarations, qui résume bien les tentatives ou bonnes intentions pour construire une IA basée sur des principes éthiques afin de conquérir la confiance des usagers qu'ils soient consommateurs, clients, patients, contribuables, justiciables ou citoyens. C'est l'*acceptabilité* des algorithmes d'Intelligence Artificielle qui est en jeu. L'équation est assez simple, en l'absence de confiance, pas d'utilisateurs donc pas de données et finalement pas d'IA et pas de bénéfices. Les conséquences de l’affaire *Cambridge Analytica* sur l’encours boursier de Facebook en fut une démonstration éclatante en juillet 2018.
+A la suite de ce dernier guide rédigé par un groupe d'experts, la Commission Européenne a édité un livre blanc :
 
-Cette affaire comme toutes celles qui éclatent régulièrement : trois condamnations successives de Google pour entrave à la concurrence, fuites répétées de données personnelles, utilisations abusives de celles-ci, nous rappellent que le but premier des entreprises commerciales n’est pas l’altruisme ou la philanthropie mais le montant des dividendes de leurs actionnaires. Ces derniers nécessitent certes des pratiques éthiques pour être acceptables mais la confiance sera nettement plus fiable si celle-ci repose sur une protection juridique plutôt que de bonnes intentions éthiques.
+- [Intelligence Artificielle: une approche basée sur l'excellence et la confiance](https://ec.europa.eu/info/sites/info/files/commission-white-paper-artificial-intelligence-feb2020_fr.pdf) (2020)
 
-De nombreux textes législatifs européens (RGPD avril 2018) et français (trois lois informatique et liberté, décrets d'application, codes civils de la Santé publique, des administrations, décisions du Conseil Constituitonnel)  tentent d’encadrer les usages de ces outils.  La mise en perspective détaillée de ces textes ([Besse et al. 2018-b](http://statistique-et-societe.fr/article/view/719)), face à la complexité et l’opacité des algorithmes d’apprentissage ou aux disruptions technnologiques, révèle des failles ou des difficultés réelles d'application de la loi. Ces vides juridiques  soulèvent des problèmes ou risques sérieux lorsques des décisions, susceptibles d'impacter des personnes physiques ou même simplement de les profiler, sont le résultat de procédures algorithmiques exécutées sur des données personnelles. 
+préalable à une réflexion qui conduira très probablement à la rédaction d'un nouveau réglement pour une *IA digne de confiance*.
+
+En effet, des intentions et déclarations éthiques de non discrimination, transparence, précision de l'IA, ne suffisent pas à assurer des comportements vertueux (cf. *Cambridge Analytica*); des lois sont nécessaires pour les imposer. C'est incontournable pour gagner la confiance des usagers, contribuables, patients, consommateurs, citoyens, justiciables... L'*acceptabilité* des systèmes d'Intelligence Artificielle est en jeu. L'équation est assez simple, en l'absence de confiance, pas d'utilisateurs donc pas de données et finalement pas d'IA et pas de profits.
+
+### 1.2 Apprentissage statistique: l'IA du quotidien 
+La classe des algorithmes d'IA dits d'[apprentissage statistique](https://github.com/wikistat/Apprentissage)  (*statistical learning*) ou supervisés car entraînés sur des données, fournissent des aides automatiques à la décision ; ils envahissent nos quotidiens ([Besse et al. 2018b](http://statistique-et-societe.fr/article/view/719)). Tous les domaines sont touchés aux USA: police, justice, santé, banque, assurance, services sociaux, éducation, emploi, logement... En France comme en Europe, les contraintes juridiques, techniques et usages culturels, limitent ces applications. Certains domaines sont concernés de longue date, principalement le tertiaire: marketing, banque, assurance, d'autres le sont de plus en plus: industrie (détection de défaillance et maintenance prédictive), ressources humaines (pré-recrutement prédictif), santé et imagerie médicale ([Besse et al. 2019](https://hal.archives-ouvertes.fr/hal-02424285))... 
+
+Des compléments d'informations sur les outils et algorithmes d'apprentissage statistique sont à rechercher dans les autres tutoriels du dépôt [`github/wikistat`](https://github.com/wikistat). 
+
+
 
 
 ### 1.3 Objectif
-Le principal objectif du présent dépôt est de mettre à disposition des ressources pédagogiques (tutoriels) afin de *promouvoir des mises en oeuvre légales et en conséquence éthiques* des algorithmes d'apprentissage automatique. Plus précisément, il s'agit de proposer des outils, indicateurs, fonctionnalités, permettant de valider la conformité des usages  algorithmiques au regard de la loi. 
+Le principal objectif du présent dépôt est de mettre à disposition des ressources pédagogiques sous forme de [tutoriels](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb) exécutant des outils, indicateurs et fonctionnalités, nécessaires à l'*évaluation de la confirmité des algorithmes aux réglementations* à venir. Elles sont préfigurées dans le [guide des experts de la CE (2019)](https://ec.europa.eu/futurium/en/ai-alliance-consultation) dont certains points sont rappelés en annexe. Les tutoriels sont développés sous la forme de calepins ou *jupyter notebooks* sur des cas d'usage bien identifiés afin de pouvoir exécuter concrètement des exemples d'évaluation *ex ante* de confirmité. 
 
-Sur des cas d'usage bien identifiés, des tutoriels (*jupyter notebook*) permettent de poser concrètement les questions de légalité des algorithmes et d'en évaluer les solutions récemment proposées et régulièrement mises à jour sur ce dépôt. Plus précisément il s'agit de détailler le fonctionnement d'outils et critères, généralement statistiques,  de détection de pratiques illégales, éventuellement de corrections et également d'aide à l'explication de décisions algorithmiques comme le voudrait la loi.
+Le choix a été fait de développer les calepins avec les langages [R](https://github.com/wikistat/Intro-R) ou [Python](https://github.com/wikistat/Intro-Python); R plus simple et intuitif propose de nombreuses librairies facilitant les aides à l'interprétation, notamment graphiques et statistiques. En revanche Pyhton s'avère souvent plus efficace et reste un outil de référence dans la communauté numérique du *fair learning*. Il permet des développements plus directement  opérationnels.
 
-Ces outils sont ceux suceptibles d'être intégrés à une *procédure d'audit* des algorithmes d'apprentissage dont la mise en place est demandée par la plupart des rapports dont celui de VIllani (2018) cités ci-dessus et appelant à un *bon usage* de l'IA.
+## 2 Risques des impacts sociétaux de l'apprentissage statistique
 
-### 1.4 Environnement technique
-Les outils sont déployés sous la forme de tutoriels: calepins ou *jupyter notebooks*. Des compléments d'informations sur les outils et algorithmes  sont à rechercher dans les autres tutoriels du dépôt [`github/wikistat`](https://github.com/wikistat). 
-
-Le choix a été fait de développer les calepins avec les langages [R](https://github.com/wikistat/Intro-R) ou [Python](https://github.com/wikistat/Intro-Python); R plus simple et intuitif propose de nombreuses librairies facilitant les aides à l'interprétation, notamment graphiques et statistiques. En revanche Pyhton s'avère souvent plus efficace et reste un outil de référence dans la communauté numérique du *fair learning*. Il permet des développements plus opérationnels.
-
-<img src="https://s14-eu5.startpage.com/cgi-bin/serveimage?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1a%2F17%2F95%2F1a1795bc25875e8644999af9534e34ab.jpg&sp=830af7d9d0d4008220ea00bc427d8062"
-     style="float:center; max-width: 500px; display: inline"  alt="LeChat" /><i>Le Chat par Philippe Geluck</i><br>
-
-Trois aspects majeurs sont à considérer et détaillés par [Besse et al. 2018-b](https://hal.archives-ouvertes.fr/hal-01886699)
+Trois aspects majeurs sont à considérer et détaillés par [Besse et al. 2018b](https://hal.archives-ouvertes.fr/hal-01886699) pour prendre en compte voire évaluer les risques des impacts sociétaux des algorithmes d'apprentissage statistique.
 
 
-## 2 Biais algorithmique et Discrimination
-### 2.1 Contexte juridique
-La loi française comme le règlement européen interdit toute forme de discrimination envers une personne ou un groupe mais, arriver à caractériser qu'une décision algorithmique est biaisée donc discriminatoire reste compliqué. Il est apparemment facile d’opérer individuellement du *testing* d’algorithme en modifiant la modalité de la variable sensible (femme en homme, noir en blanc, vieux en jeune...) d’une personne pour provoquer une éventuelle bascule de la décision, preuve d'une discrimination individuelle. Les exemples traités ci-dessous montrent les limites voire l'insuffisance d'une telle approche pour aborder la dicrimination envers un groupe.
+### 2.1 Risques de biais discriminatoires
+*(Cf. point 5 de la liste d'évaluation en annexe)*
 
-Comme le signale le rapport Villani (2018), il est important de pouvoir définir une mesure de *discrimination envers un groupe*: le *discrimination impact assessment* ou *DIA*. C'est ce qui est pratiqué de longue date (1971) aux USA et reconnu dans certains cas par les tribunaux avec une approche statistique de la mesure de la discrimination à l'embauche ou pour l'accès au logement. Plusieurs indicateurs sont utilisables mais le plus employé et discuté considère la notion d'*effet disproportionné* (*disparate impact* ou *DI*). La variable sensible et protégée doit être connue (c'est le cas aux USA pour l'origine ethnique) pour estimer l'effet disproportionné mais celle-ci peut l'être sous une une forme cryptée ou en protégeant l'anonymat des personnes. 
+La loi française comme le règlement européen interdit toute forme de discrimination envers une personne ou un groupe identifié par une variable dite *sensible* (genre, origine ethnique, âge...). Par principe, un algorithme d'apprentissage reproduit les biais des données donc les discriminations déjà présentes et il peut en plus les renforcer. Mais, arriver à caractériser qu'une décision algorithmique est biaisée donc discriminatoire reste compliqué. Il est apparemment facile d’opérer individuellement le *testing* (Riach et Rich 2002) d'une décision en modifiant la modalité de la variable sensible (femme en homme, noir en blanc, vieux en jeune...) d’une personne pour provoquer une éventuelle bascule de la décision, preuve d'une discrimination individuelle. Mais le *testing*, bien que périodiquement utilisé dans des enquêtes en France par la [DARES](https://dares.travail-emploi.gouv.fr/dares-etudes-et-statistiques/colloques-et-appels-a-projets/appels-a-projets-et-marches-d-etudes/appels-a-projets-de-recherche-et-marches-d-etude/ouverts/article/realisation-d-une-etude-quantitative-par-la-methode-du-testing-des) pour mesurer la discrimination à l'embauche, n'est pas  adapté à l'évaluation fiable d'une discriminaiton indirecte au détriment d'un groupe et complètement inefficace face à une décision algorithmique (cf. [tutoriel](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb)). 
 
-Des biais, discriminations ou injustices ayant été identifiées, dans la base d'apprentissage et / ou dans la prévision, des outils statistiques et algorithmiques existent (*fair learning*) pour en corriger ou au mois en atténuer les effets. Si la base d'apprentissage est biaisée, ce qui est très généralement la source principale de discrimination, corriger le biais induit une forme de discrimination positive qui relève d'une décision politique, pas algorithmique.
- 
-### 2.2 Détecter un biais, une discrimination, la ou les corriger
-La première difficulté réside dans la façon de définir une discrimination, notamment d'un point de vue légal, puis de traduire cette définition en une quantité mesurable afin de construire des outils de détection. Suivant en cela Friedler et al. (2019) nous considérons qu'il n'est pas utile de multiplier les critères de détection de biais car beaucoup sont similaires et donc très corrélés entre eux. 
+Comme le signale le rapport Villani (2018), il est important de pouvoir définir une mesure quantitative de *discrimination envers un groupe*: *discrimination impact assessment* ou *DIA*. Il existe de très nombreux types de discrimination et indicateurs statistiques dans la littérature (Zliobaité 2017) pour les mesurer mais, comme le montre Friedler et al. (2019), il n'est pas utile de les multiplier car beaucoup sont redondants ou très corrélés entre eux. Nous pouvons considérer trois niveaux de biais mesurés par des indicateurs de plus en plus consensuels dans la communauté scientifique:
 
-Trois niveaux de biais mesurés par des indicateurs de plus en plus consensuels dans la communauté scientifique sont considérés:
+1. discrimination de groupe et effet disproportionné: *disparate impact* (*DI*) ou *demographic equality*,
+2. comparaison des précisions ou taux d'erreur conditionnellement à la variable sensible: *overall error equality*,
+3. comparaison des taux de faux positifs et vrais négatifs conditionnellement à la variable sensible: *equality of odds*
 
-- discrimination de groupe et effet disproportionné: *disparate impact* (*DI*) ou *demographic equality*,
-- comparaison des précisions ou taux d'erreur conditionnellement à la variable sensible: *overall error equality*,
-- comparaison des taux de faux positifs et vrais négatifs conditionnellement à la variable sensible: *equality of odds*
+Aux USA, la notion d'*adverse* ou *disparate impact* (effet disproporttionné) est utilisée depuis 1971 (Barocas et Selbst 2017) pour mesurer des discriminations indirectes dans l'accès à l'emploi, le logement, le crédit. Il s'agit d'estimer le rapport de deux probabilités: probabilité d'une décision favorable pour une personne du groupe sensible au sens de la loi sur la même probabilité pour une personne de l'autre groupe. Des éléments de cette approche statistique sont présents dans un guide publié par le [Défenseur des Droits et la CNIL (2012)](https://www.defenseurdesdroits.fr/sites/default/files/atoms/files/836190240_access.pdf). Il décrit une approche méthodologique à l’intention des acteurs de l’emploi pour mesurer et progresser dans l’égalité des chances.
 
-Tous ces niveaux de biais sont caractérisés par des indicateurs dont l'estimation est proposée par des intervalles de confiance (Besse et al. 2018) afin d'en contrôler la précision.
+Tous ces niveaux de biais sont caractérisés par des indicateurs dont l'estimation est proposée par des intervalles de confiance (Besse et al. 2018) afin d'en contrôler la précision. Ils sont illustrés dans le [tutoriel](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb).
 
-La phase suivante concerne la correction du biais dans le but d'éviter les sources de discrimination. Plusieurs stratégies sont comparées en exploitant les ressources disponibles en Python.
+Après avoir identifié des biais dans les données d'apprentissage et évaluer le comportement d'une algorihtme pour les reproduire voir les renforcer, il s'agit ensuite de modérer ou corriger ces biais. Sur ce point aussi la littérature est très prolixe (cf. par exemple le [site aif360.mybluemix.net](https://aif360.mybluemix.net/)) en proposant de corriger les données (del Barrio et al. 2019) ou le mode d'apprentissage ou encore la décision après la prévision (cf. [tutoriel](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb)).  La question initiale essentielle dépend de la volonté politique d'introduire ou non une forme de discriminaiton positive afin progresser vers une société plus "équitable":
 
-Ces différents points sont illustrés par des exemples, ou cas d'usage, sur des données publiques et sous la forme de tutoriels (*jupyter notebook*).
+*(52) Si les biais injustes peuvent être évités, les systèmes d’IA pourraient même améliorer le caractère équitable de la sociéte.*
 
-### 2.3 Cas d'usage: [Adult census](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/) 
-1. Ces données de sondage présentent des biais sociologiques attendus vis-à-vis des groupes de genre et d'origine ethnique. Le biais, mesuré par l'effet disproportionné (*Disparate impact* ou *DI*), est nettement plus marqué conditionnellement au genre.
-2. Une prévision du seuil avec un algorithme d'apprentissage reproduit voire amplifie ce biais: le *DI* décroît. C'est même statistiquement significatif pour le genre avec la régression logistique linéaire (sans interaction): intervalles de confiance du *DI* disjoints; c'est plus modéré pour l'origine. *Un modèle linéaire opère une discrimination conditionnellement au genre*. 
-3. *Comme la précision, l'augmentation du biais dépend de l'algorithme opéré*. Sur ces points, les forêts aléatoires sont plus performantes que la régression logistique, sur-biaisent moins mais sont opaques à une interprétation. 
-4. L'itération de la séparation aléatoire des échantillons apprentissage / test par validation croisée *Monte Carlo* révèle une instabilité importante de l'estimation du *DI*, même sur une relativement grosse base de données, mais confirme l'effet discriminatoire des algorithmes. Ceci souligne et valide l'importance d'une estimation du *DI* par intervalle de confiance.
-5. La détection d'une discrimination individuelle par *testing* montre que peu de femmes ou de non-caucasiens pourraient se déclarer discriminés par la prévision et être donc en mesure, individuellement, de porter plainte. Cette mesure individuelle de la discrimination, est finalement assez annecdotique au regard de la mesure de discrimination de groupe; autrement dit, sur cet exemple, *une mesure individuelle de la discrimination par testing minimise son importance*. 
-6. Corriger la prévision pour attribuer la prévision la plus favorable quel que soit la modalité sensible, permet à une entreprise ou administration d'échapper à une investigation par *testing* mais ne fait en rien décroîte le biais (accroître le *DI*) donc la discrimination de groupe. Ce serait une *pratique tout à fait déloyale, voire condamnable*.
-7. La suppression des variables sensibles de la prévision ne change rien aux points 2 et 3 précédents. C'est une *procédure naïve et inefficace pour corriger le *DI* donc un biais de groupe*.
-8. **Résultat important** à évaluer sur d'autres sources de données: une façon simple d'éviter des décisions discriminatoires, mais sans toucher au biais de société, consiste à opérer des algorithmes  *non linéaires* (arbre, forêt), *un pour chaque modalité* de la variable sensible.
-9. Les taux d'erreurs conditionnels aux variables sensibles sont assez différents; une estimation par intervalle de confiance serait bienvenue. *L'accroissement de l'erreur est dans ce cas au détriment de la classe majoritaire* et se retrouve pour tous les algorithmes linéaires ou non.
-10. Après l'effet disproportionné (*DI*) et les taux d'erreur conditionnels, il est important de considérer les éventuelles *asymétries des matrices de confusion conditionnelles* (*equality of odds*) aux variables sensibles. Le rapport des taux de faux positifs conditionnels ainsi que celui des taux de faux négatifs conditionnels témoignent de différences de traitement marqués relativement aux groupes. Pour la régression logistique, Les taux d'erreurs sont effectivement importants pour les hommes mais c'est finalement à leur avantage car le *taux de faux positifs est significativement plus important les concernant au contraire des taux de faux négatifs plus importants pour les femmes*. En cas d'erreur celle-ci est donc en moyenne au profit des hommes; ce phénomène est moins marqué conditionnellement à l'origine ethnique. 
-11. **Suite**: Comme pour le *DI*, l'*association de deux algorihtmes non linéaires* (arbre ou forêt) ne corrige pas le biais sur les taux d'erreur mais semble le corriger sur les taux de faux positifs et faux négatifs conditionnels. 
-12. En France, comme en Europe, il y a une part d'hypocrisie à interdire l'enregistrement d'une variable sensible. Certes, cela protège la confidentialité des personnes mais empêche aussi de mettre simplement en évidence biais et discriminations des traitements vis-à-vis d'un groupe ou des individus. 
-13. Une pratique parfois jugée déloyale et qui consiste à adapter le seuil de décision de la prévision, le baisser pour le groupe à protéger, réduit significativement le biais pour le *rendre similaire à celui de la base d'entraînement*; il n'y a plus discrimination de groupe. La procédure qui consisterait à réduire plus le seuil pour corriger le biais de société revient à introduire une discrimination positive. Il s'agit d'un choix politique et non plus statistique. Dans ce cas, l'erreur de prévision se dégrade. D'autres corrections de biais en contrôlant l'erreur de prévision sont à considérer pour conduire à de l'*apprentissage loyal* et donc à une *IA éthique*. C'est l'objet d'un autre tutoriel en python.
-14. Les autres indicateurs de biais: *overall error equality*, *odds equlity*
+### 2.2 Qualité et robustesse des décisions algorithmiques
+*(Cf. point 2 de la liste d'évaluation en annexe)*
 
+Les algorithmes d'apprentissage ne sont pas prouvables, certifiables de façon déterministe comme des algorithmes procéduraux. Néanmoins, l'évaluation de la qualité d'une décision algorithmique est une question essentielle lorsqu'il s'agit, par exemple, de discuter de l'opportunité d'une opération chirurgicale ou encore de la libération conditionnelle d'un détenu. La loi est encore muette sur ce sujet et n'oblige en rien à la communication des estimations des qualités des prévisions conduisant aux décisions, comme c'est le cas pour un sondage d'opinion. 
 
-### 3 Explicabilité (en chantier)
-Une des principales sources de problèmes soulevés par l’IA réside dans l’opacité des algorithmes récents d’apprentissage statistique dont la complexité les rend impropres à une interprétation élémentaire comme c’est le cas d’un algorithme basé sur un modèle statistique linéaire ou un arbre de décision binaire. 
-
-Le RGPD et plus précisément la loi française évoquent un « droit à l’explication » des décisions algorithmiques. Quelles aides peuvent être apportées en ce sens? La recherche est très active sur le sujet. L’objectif est d’en illustrer quelques pistes, notamment à l’aide de la librairie LIME sur des exemples. L’aide peut concerner une compréhension globale de l’algorithme (importance ou impact des variables, Bachoc et al. 2018) ou l’explication à un individu donné: quelle modification de quelle variable conduirait à une décision favorable concernant l’accès à un crédit, un emploi... Il s'agit aussi d'identifier les variables ou facteurs qui influencent le plus et dans quel sens une décision pour qu'un humain, respectueux de la législation, en déduise des explications *intelligibles* adressées à la personne qui en fait la demande. 
-
-## 4 Qualité des décisions algorithmiques
-### 4.1 Contexte déontologique
-Les algorithmes d'apprentissage ne sont pas prouvables, certifiables de façon déterministe comme des algorithmes procéduraux. Néanmoins, l'évaluation de la qualité d'une décision algorithmique est une question essentielle lorsqu'il s'agit, par exemple, de discuter de l'opportunité d'une opération chirurgicale ou encore de la libération conditionnelle d'un détenu. Malheureusement la loi est muette sur ce sujet et n'oblige en rien à la communication des estimations des qualités des prévisions conduisant aux décisions, comme c'est le cas pour un sondage d'opinion. 
-
-Il n'est pas possible de faire comme si 3% d'erreur en reconnaissance d'images c'est pareil que 30% à 40% en prévision de la récidive. Avec la loi actuelle un humain doit assumer la décision et, d'un point de vue éthique, il n'y a pas d'obligation de résultat mais une obligation de moyens et aussi de transparence sur la qualité de la décision. La quantification ou l'estimation statistique d'un taux d'erreur doit se substituer à un déterminisme binaire : vrai / faux irréaliste.
- 
-### 4.2 Mesurer la qualité d'une décision
 Les différentes étapes de l'apprentissage supervisé sont [détaillées](https://github.com/wikistat/Apprentissage) et illustrées par ailleurs sur de nombreux cas d'usage. Les méthodes de prévisions sont entraînées sur les données d’apprentissage dont la qualité et la représentativité sont déterminantes. Les phases d'extraction, vérification, nettoyage, préparation des données sont critiques et doivent être conduites avec un soin particulier: *garbage in, garbage out*. Le volume des données peut être un facteur utile de qualité mais secondaire, seulement si celles-ci sont bien représentatives de l’objectif et pas biaisées. Dans le cas contraire des téraoctets de données n’améliorent en rien la qualité.
 
-Les  stratégies d'apprentissage statistique sont par ailleurs rôdées et bien connues. L'objectif est d'optimiser le choix d'un algorithme afin, obligation de moyens, d'aboutir à la prévision minimisant un risque et ainsi à la meilleure décision. L'[estimation de l'erreur](http://wikistat.fr/pdf/st-m-app-risque.pdf) est donc intégrée à la démarche, il suffit de la faire connaître par souci de transparence.
+Les stratégies d'apprentissage statistique intervenant ensuite sont rôdées et bien connues. L'objectif est d'optimiser le choix d'un algorithme afin, obligation de moyens, d'aboutir à la prévision minimisant un risque et ainsi à la meilleure décision. L'[estimation de l'erreur](http://wikistat.fr/pdf/st-m-app-risque.pdf) est donc intégrée à la démarche (cf. [tutoriel](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb)), il suffit de la documenter explicitement par souci de transparence.
 
-Un pratique déontologique élémentaire consiste donc à associer chaque décision à une estimation statistique de la [qualité de prévision](http://wikistat.fr/pdf/st-m-app-risque.pdf) (*accuracy*) ou capacité de généralisation ou encore robustesse; la qualité est estimée sur un *échantillon test indépendant*.
+L'évaluation de la conformité d'un algorihtme doit donc nécessairement documenter  l'estimation statistique de la [qualité de prévision](http://wikistat.fr/pdf/st-m-app-risque.pdf) (*accuracy*) ou capacité de généralisation ou encore robustesse. Celle-ci doit nécessairement être estimée sur un *échantillon test indépendant* de l'échantillon d'apprentissage et représentatif des modes d'acquisition auxquels l'algorithme va être confronté. Lors de l'exploitation d'un algorithme et tout le temps de sa durée de vie, le process qualité associé doit inclure une boucle de rétroaction en cas d'erreur de décision afin d'en identifier la cause, généralement une insuffisance ou faille de la base d'apprentissage. Ce n'est pas une mise à jour logiciel qui s'impose alors, mais des ré-apprentissages périodiques sur la base corrigée.
 
+### 2.3 Opacité et Explicabilité
+*(Cf. point 4 de la liste d'avalutation en annexe)*
+
+Une des principaux problèmes soulevés par l’IA réside dans l’opacité des algorithmes récents d’apprentissage statistique dont la complexité les rend impropres à une interprétation élémentaire comme c’est le cas d’un algorithme basé sur un modèle statistique linéaire ou un arbre de décision binaire.
+
+Le RGPD et plus précisément la loi française évoquent un « droit à l’explication » des décisions algorithmiques. Quelles aides peuvent être apportées en ce sens? Comme les enjeux industriels et sociétaux sont considérables, la recherche académique (cf. Bachoc et al. 2019) est très active sur le sujet.  Consulter le dépôt [XAI-ANITI/ethik](https://github.com/XAI-ANITI/ethik) pour en suivre l'évolution.
+
+## 3 Principaux résultats des tutoriels de détection des biais
+### 3.1 Les données
+Le problème s’énonce simplement : un algorithme entraîné à prendre des décisions à partir de données sociales biaisées reproduit fidèlement ces biais et peut même les amplifier et donc induire de fortes discriminations en lien avec le sexe, l'âge, l'origine des personnes… Ceci est illustré en considérant des [données publiques](https://archive.ics.uci.edu/ml/datasets/Adult) qui imitent le contexte de calcul d’un score de crédit. Elles sont extraites d’un recensement de 1994 aux USA et décrivent l’âge, le type d’emploi, le niveau d’éducation, le statut marital, l’origine ethnique, le nombre d’heures travaillées par semaine, la présence ou non d’un enfant, les revenus ou pertes financières, le genre et le niveau de revenu bas ou élevé. Elles servent de référence ou bac à sable pour tous les développements d’algorithmes  d’apprentissage automatique équitable. Il s'agit de prévoir si le revenu annuel d'une personne est supérieur ou inférieur à 50k$ et donc  de prévoir, d'une certaine façon, sa solvabilité connaissant ses origines, âge, sexe, diplôme, type d’emploi…  L’étude complète et les codes sont disponibles mais l’illustration est limitée à un résumé succinct de l’analyse de la discrimination selon le sexe. 
+
+### 3.2 Résultats
+Les données incluent un biais de société important estimé sur un échantillon de 45 000 personnes : seulement 11,6 % des femmes ont un revenu élevé contre 31,5% des hommes. Le rapport: *DI=0,38* est donc très disproportionné. Différents modèles ou algorithmes sont entraînés sur une partie (apprentissage) des données puis exécutés sur la partie test restante. Les résultats sont regroupés dans la figure 1.
+
+![40% center](resDIdiscrim.png)
+
+<img src="resDIdiscrim.png" height="100"  alt="graphe">
+
+*Figure 1. Précision de la prévision (accuracy) et effet disproportionné estimé par un intervalle de confiance sur un échantillon test (taille 9000) pour différents modèles ou algorithmes d’apprentissage.*
+
+Le biais initial des données *(DI=0,38)* est comparé avec celui de la prévision de niveau de revenu par un modèle classique linéaire de régression logistique `linLogit` : *DI=0,25*. Significativement moins élevé (intervalle de confiance disjoint), il montre que ce modèle renforce le biais et donc discrimine nettement les femmes dans sa prévision. La procédure naïve (`linLogit-w-s`) qui consiste à éliminer la variable dite sensible (genre) du modèle ne supprime en rien *(DI=0,27)* le biais discriminatoire car le genre est de toute façon présent à travers les valeurs prises par les autres variables. Une autre conséquence de cette dépendance est que le *testing* (changement de genre toutes choses égales par ailleurs) ne détecte plus *(DI=0.90)* aucune discrimination!
+
+Un algorithme non linéaire plus sophistiqué est très fidèle au biais des données avec un indicateur (DI=0,36) pas significativement différent du biais de société et fournit une meilleure précision (0,86 au lieu de 0,84 pour la régression logistique). Cet algorithme ne discrimine pas mais c’est au prix de l’interprétabilité du modèle. Opaque comme un réseau de neurones, il ne permet pas d’expliquer une décision à partir de ses paramètres comme cela est facile avec le modèle de régression. Enfin, la dernière ligne propose une façon simple, parmi une littérature très volumineuse, de corriger le biais pour plus de « justice sociale ». Deux algorithmes sont entraînés, un par genre et le seuil de décision (revenu élevé ou pas, accord ou non de crédit…) est abaissé pour les femmes : 0,3 au lieu de celui par défaut de 0,5 pour les hommes. C’est une façon, parmi beaucoup d’autres, d’introduire une part de discrimination positive.
+
+Les autres types de biais sont également à considérer. Par principe, la précision de la prévision pour un groupe dépend de sa représentativité. Si ce dernier est sous représenté, l'erreur est plus importante; c'est typiquement le cas en reconnaissance faciale mais pas dans l'exemple traité. ALors qu'elles sont deux fois moins nombreuses dans l'échantillon, le taux d'erreur de prévision est de l'ordre de *7,9%* pour les femmes et de *17%* pour les hommes. Il faut donc considérer le troisième type de biais pour se rendre compte que c’est finalement à leur désavantage. Le taux de faux positifs est plus important pour les hommes *(0,08)* que pour les femmes *(0,02)*, ces erreurs les favorisent, alors que le taux de faux négatifs est plus important pour les femmes *(0,41)* que pour les hommes *(0,38)*.
+
+### 3.3 Discussion
+Nous pouvons tirer quelques enseignements de cet exemple rudimentaire, enseignements qui peuvent aussi s’appliquer aux algorithmes de pré-recrutement basées sur l’apprentissage automatique de CV ou vidéos. Sans précaution, si un biais est présent dans les données, il est reproduit voire renforcé avec un algorithme linéaire. Un algorithme plus sophistiqué, non linéaire ne fait que reproduire le biais mais ne permet plus de justification économique des choix si l'effet disproportionné est important *(DI<0.8)*. C’est vraisemblablement ce qui a conduit *Amazon* à stopper précipitamment sa procédure  de recrutement sur des postes techniques qui ne sélectionnait plus de femmes. La procédure de *testing*, déjà peut convaincante pour évaluer une discrimination indirecte *ex post*, est complètement inadaptée face à une procédure algorithmique. 
+
+Actuellement en Europe, un ou une *data scientist* est libre de produire ce qu’il peut ou veut, en fonction de ses compétences et de sa déontologie personnelle: de l’algorithme élémentaire interprétable mais discriminatoire à une procédure incluant de la discrimination positive. Aucune procédure de contrôle *ex ante* ou *post*, ne vient le remettre en cause. En revanche, aux USA, l’usage de prise en compte de l’effet disproportionné incite très fortement les entreprises développant des logiciels ou plateformes de pré-recrutement à le prendre en compte (Raghavan er al. 2019). Elles proposent des solutions en ce sens, non pour des raisons éthiques mais d’argumentation commerciale : économiser des procédures coûteuses de justification en cas d’effet disproportionné trop marqué.
 
 ## Références
-- Angwin J., Larson J., Mattu S., Kirchner L. (2016). [How we analyzed the compas recidivism algorithm](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm). ProPublica, en ligne consulté le 28/04/2017.
 - Bachoc F., Gamboa F., Loubes J.-M., and Risser L. (2019). Entropic Variable Boosting for Explainability & Interpretability in Machine Learnings, [arXiv preprint](https://arxiv.org/pdf/1810.07924.pdf)
+- Barocas S. , Selbst A. (2016). Big Data's Disparate Impact, 104 *California Law Review*, 104 671. http://dx.doi.org/10.2139/ssrn.2477899
 - Besse P. ,del Barrio E., Gordaliza P., Loubes J.-M. (2018-a). Confidence Intervals for testing Disparate Impact in Fair Learning, [arXiv preprint](https://arxiv.org/abs/1807.06362).
+- Besse P., Besse Patin A., Castets Renard C. (2019). Implications juridiques et éthiques des algorithmes d'intelligence artificielle dans le domaine de la santé, soumis, [hal-02424285](https://hal.archives-ouvertes.fr/hal-02424285).
 - Besse P., Castets-Renard C., Garivier A., Loubes J.-M. (2018-b). L'IA du Quotidien peut elle être Éthique?  Loyauté des Algorithmes d'Apprentissage Automatique, *Statistique et Société*, [Vol. 6 N°3](http://statistique-et-societe.fr/article/view/719).
 - del Barrio E., Gamboa F., Gordaliza P., Loubes J.-M. (2018). Obtaining fairness using optimal transport theory, ICML 2019, [arXiv preprint](https://arxiv.org/pdf/1806.03195).
+- Friedler S., Scheidegger C., Venkatasubramanian S., Choudhary S., Hamilton E., Roth D. (). Comparative study of fairness-enhancing interventions in machine learning. *Proceedings of the Conference on Fairness, Accountability, and Transparency*, p. 329‐38.  http://dl.acm.org/citation.cfm?doid=3287560.3287589
+- Raghavan M., Barocas S., Kleinberg J., Levy K. (2019) Mitigating bias in Algorithmic
+Hiring : Evaluating Claims and Practices, [arXiv:1906.09208](https://arxiv.org/abs/1906.09208).
+- Riach P.A., Rich J. (2002). Field Experiments of Discrimination in the Market Place, The Economic Journal, Vol. 112 (483), pp F480-F518.
+- Zliobaité I. (2017). Measuring discrimination in algorithmic decision making. Data Min Knowl Disc 31, 1060–1089. doi.org/10.1007/s10618-017-0506-1.
+
+## Annexe: Extraits du Guide des Experts de la CE pour une IA Digne de Confiance
+
+Relevons certains points mis en exergue dans le le guide: 
+
+- (52) Si les biais injustes peuvent être évités, les systèmes d’IA pourraient même améliorer le caractère équitable de la sociéte.
+- (69) Il est important que le système puisse indiquer le niveau de probabilité de ces erreurs.
+- (80) Absence de biais injustes: La persistance de ces biais pourrait être source de discrimination et de préjudice (in)directs. Dans la mesure du possible, les biais détectables et discriminatoires devraient être supprimés lors de la phase de collecte.
+- (106) (107) besoin de normalisation.
+
+AInsi que des questions de la liste d'évaluation
+
+*2. Robustesse technique et sécurité*
+
+- *Précision*
+   - Avez-vous évalué le niveau de précision et la définition de la précision nécessaires dans le contexte du système d’IA et du cas d’utilisation concerné?
+    - Avez-vous réfléchi à la manière dont la précision est mesurée et assurée?
+    - Avez-vous mis en place des mesures pour veiller à ce que les données utilisées soient exhaustives et à jour?
+    - Avez-vous mis en place des mesures pour évaluer si des données supplémentaires sont nécessaires, par exemple pour améliorer la précision et éliminer les biais?
+
+*4. Transparence*
+
+- *Explicabilité*
+    - Avez-vous évalué la mesure dans laquelle les décisions prises, et donc les résultats obtenus, par le
+système d’IA peuvent être compris?
+    - Avez-vous veillé à ce qu’une explication de la raison pour laquelle un système a procédé à un certain
+choix entraînant un certain résultat puisse être rendue compréhensible pour l’ensemble des utilisateurs qui pourraient souhaiter obtenir une explication?
+
+*5. Diversité, non-discrimination et équité*
+
+- Avez-vous prévu une stratégie ou un ensemble de procédures pour éviter de créer ou de renforcer des biais
+injustes dans le système d’IA, en ce qui concerne tant l’utilisation des données d’entrée que la conception de
+l’algorithme ?
+- Avez-vous réfléchi à la diversité et à la représentativité des utilisateurs dans les données ? 
+- Avez-vous procédé à des essais portant sur des populations spécifiques ou des cas d’utilisation problématiques?
+- Avez-vous recherché et utilisé les outils techniques disponibles pour améliorer votre compréhension des données,
+du modèle et de la performance ?
+- Avez-vous mis en place des processus pour tester et contrôler les biais éventuels au cours de la phase de mise
+au point, de déploiement et d’utilisation du système ?
+- Avez-vous prévu une analyse quantitative ou des indicateurs pour mesurer et tester la définition appliquée de
+l’équité ?
+
