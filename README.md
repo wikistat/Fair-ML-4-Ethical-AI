@@ -1,3 +1,4 @@
+
 <a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/logo-insa.jpg" height="100"  alt="INSA"/></a> 
 <a href="https://observatoire-ia.ulaval.ca/" ><img src="https://b-com.com/sites/default/files/observatoire-logo_complet-couleurs-texte_droite%20copie-01.jpg" height="150" alt="ObvIA"/></a> 
 <a href="https://aniti.univ-toulouse.fr/" ><img src="https://www.actuia.com/wp-content/uploads/2019/07/logo_ANITI1-696x348.jpg" height="100" alt="ANITI"/></a> 
@@ -15,6 +16,11 @@
 (3) Université de Toulouse -- Paul Sabatier & [ANITI](https://aniti.univ-toulouse.fr/)
 
 (4) IMT - CNRS & [ANITI](https://aniti.univ-toulouse.fr/)
+
+**Résumé**
+
+Faisant suite au déploiement du RGPD, la Commission Européenne a publié en février dernier un livre blanc pour une [approche de l'IA basée sur l'excellence et la confiance](https://ec.europa.eu/info/sites/info/files/commission-white-paper-artificial-intelligence-feb2020_fr.pdf) et dont les recommandations sont largement issues du [guide pour une IA digne de confiance](https://ec.europa.eu/futurium/en/ai-alliance-consultation) rédigé en 2019 par un groupe d'experts européens. Au delà des questions prioritaires de protection des données au cœur des missions de la CNIL, ce livre blanc soulève avec insistance d'autres questions relatives aux risques des impacts des algorithmes d'apprentissage automatique sur notre société: le mot *discrimination* y est ainsi présent 16 fois. En nous basant sur des exemples concrets: score de crédit, pré-recrutement prédictif, nous décrivons quels outils, procédures, indicateurs (cf. [tutoriel](https://github.com/wikistat/Fair-ML-4-Ethical-AI/blob/master/AdultCensus/AdultCensus-R-biasDetection.ipynb)), pourraient participer à la construction d'un DIA ou Discrimination Impact Assessment souhaité par le [rapport  Villani (2018)](https://www.aiforhumanity.fr/pdfs/9782111457089_Rapport_Villani_accessible.pdf). Appliqué au recrutement prédictif, nous retrouvons les usages états-uniens officiels de l'[évaluation de l'effet disproportionné](https://www.govinfo.gov/content/pkg/CFR-2017-title29-vol4/xml/CFR-2017-title29-vol4-part1607.xml) (disparate impact) et les propositions du [guide méthodologique à l'usage des acteurs de l'emploi](https://www.defenseurdesdroits.fr/sites/default/files/atoms/files/836190240_access.pdf) (CNIL & Défenseur des Droits, 2012).
+
 
 ## 1 Introduction
 ### 1.1 IA post RGPD éthique et/ou légale 
