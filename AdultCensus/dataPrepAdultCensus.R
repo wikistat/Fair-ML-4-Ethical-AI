@@ -147,4 +147,4 @@ dataPrepAdultCensus = function(path=""){
 #  return(list(train = trainset,val = valset)) 
   return(data)
 }
-dataBase = dataPrepAdultCensus()
+
